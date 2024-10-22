@@ -141,12 +141,7 @@
 }
 
 /* Education Section */
-.education-image img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+
 
 .education-text h2 {
     font-size: 1.8rem;
@@ -178,8 +173,16 @@
     border-radius: 8px;
     transition: transform 0.2s;
     width: 100%; /* 100% width on smaller screens */
+    height: 400px;
 }
-
+.card-footer{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+    width: 100%; /* 100% width on smaller screens */
+    
+}
 .card:hover {
     transform: scale(1.05);
 }
@@ -187,7 +190,7 @@
 .card-img-top {
     object-fit: cover;
     height: 200px;
-    border-radius: 8px 8px 0 0;
+    
 }
 
 /* Footer Adjustments */
@@ -246,6 +249,7 @@ footer .fab {
 /* Instagram Gallery Adjustments */
 .instagram-gallery img {
     transition: transform 0.3s ease-in-out;
-    width: 100%;
-    height: auto;
+    width: 100%;      /* Make the images responsive */
+    height: 200px;    /* Fixed height for uniform size */
+    object-fit: cover; /* Ensure images are cropped neatly */
 }
