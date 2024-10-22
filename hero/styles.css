@@ -1,0 +1,251 @@
+/* Navbar Styles */
+.navbar.bg-transparent {
+    background-color: transparent !important;
+}
+
+.navbar {
+    transition: top 0.5s;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar .form-control {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%; /* Full width on mobile */
+}
+
+.navbar .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: url('images/Group 1.png') no-repeat center center/cover;
+    position: relative;
+    padding-top: 80px; /* Add top padding to prevent overlap with navbar */
+    padding-left: 50px; /* Add left padding for better alignment */
+    
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+    color: white;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+    padding-top: 80px;
+}
+
+.hero-content h6 {
+    font-size: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 30px;
+        max-width: 100%
+    }
+
+    .hero-content h6 {
+        font-size: 1.3rem;
+        max-width: 100%
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 100%
+    }
+
+    #carousel-wrapper {
+        overflow-x: scroll; /* Allows horizontal scrolling on smaller screens */
+    }
+}
+
+/* Diamond Shape Carousel */
+#carousel-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10px; /* Padding to handle overflow on smaller screens */
+}
+
+#carousel {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.4s ease-in-out;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+/* Individual Carousel Item */
+.shape-item {
+    min-width: calc((100% / 6) - 10px);
+    max-width: calc((100% / 6) - 10px);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Adjust carousel for tablets and mobile */
+@media (max-width: 992px) {
+    .shape-item {
+        min-width: calc((100% / 3) - 10px); /* 3 items per row on tablets */
+        max-width: calc((100% / 3) - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .shape-item {
+        min-width: calc((100% / 2) - 10px); /* 2 items per row on mobile */
+        max-width: calc((100% / 2) - 10px);
+    }
+}
+
+/* Responsive Image Adjustments */
+.shape-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Education Section */
+.education-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.education-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.education-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+/* Gemstones Section */
+.gemstones-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gemstones-section p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Responsive Card Adjustments */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+    width: 100%; /* 100% width on smaller screens */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Footer Adjustments */
+footer .form-control {
+    border-radius: 30px 40px 40px 30px;
+    width: 100%; /* Full width on mobile */
+}
+
+footer .btn {
+    border-radius: 30px 40px 40px 30px;
+    width: 100%; /* Full width on mobile */
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+footer .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+}
+
+/* Footer Divider */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .text-end, .text-center {
+        text-align: center !important;
+    }
+
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-divider {
+        margin: 20px 0;
+    }
+}
+
+/* Instagram Gallery Adjustments */
+.instagram-gallery img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+}

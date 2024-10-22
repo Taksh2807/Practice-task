@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Jewelry Collection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find Your Diamond</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- Search Form -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">🔍</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h6>Diamond Jewelry Collection</h6>
+            <p>
+                Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                and more recently with desktop publishing software like Aldus PageMaker.
+            </p>
+            <button class="btn btn-outline-light">Discover our collection</button>
+        </div>
+    </section>
+
+    <!-- Diamond Shape Section -->
+     
+    <section class="diamond-shapes container my-5">
+        <h2 class="text-center">Shop Diamonds by Shape</h2>
+        <p class="text-center">Our Diamond Search tool allows you to filter by the 4 C's and more!</p>
+    
+        <div class="shape-carousel d-flex justify-content-center align-items-center">
+            <button id="prev" class="btn btn-outline-secondary">«</button>
+            <div id="carousel-wrapper" class="overflow-hidden d-flex">
+                <div id="carousel" class="d-flex">
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 1">
+                    </div>
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 2">
+                    </div>
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 3">
+                    </div>
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 4">
+                    </div>
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 5">
+                    </div>
+                    <div class="shape-item">
+                        <img src="https://via.placeholder.com/100x50" alt="Diamond Shape 6">
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+            <button id="next" class="btn btn-outline-secondary">»</button>
+        </div>
+    </section>
+    
+    
+
+    <!-- High Jewelry Section -->
+    <section class="high-jewelry container my-5">
+        <h2 class="text-center">High Jewelry</h2>
+        <p class="text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+            been the industry's standard dummy text ever since the 1500s.
+        </p>
+
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x400" alt="Earring" class="img-fluid">
+                <p>Discover</p>
+                <h5>Earring</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x400" alt="Ring" class="img-fluid">
+                <p>Discover</p>
+                <h5>Ring</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x400" alt="Bracelet" class="img-fluid">
+                <p>Discover</p>
+                <h5>Bracelet</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/300x400" alt="Necklace" class="img-fluid">
+                <p>Discover</p>
+                <h5>Necklace</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diamond Education Section -->
+<section class="diamond-education container my-5 d-flex align-items-center">
+    <div class="education-image">
+        <img src="https://via.placeholder.com/600x500" alt="Diamond" class="img-fluid">
+    </div>
+    <div class="education-text ms-5">
+        <h2>Diamond Education</h2>
+        <p class="text-muted">
+            Take a closer look at your favorite diamonds using our Real-Time Diamond Inspection service; 
+            a one-on-one consultation with a non-commissioned certified gemologist. Share your screen and get 
+            expert guidance as you explore diamonds in 360° HD with up to 40x magnification.
+        </p>
+        <button class="btn btn-outline-dark">Read more</button>
+    </div>
+</section>
+
+
+<!-- Gemstones Section -->
+<section class="gemstones-section container my-5">
+    <h2 class="text-center">Gemstones</h2>
+    <p class="text-center text-muted">Rare and exceptional</p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="White Diamond">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">White diamond</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Yellow Diamond">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">Yellow diamond</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Coloured Diamond">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">Coloured diamond</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Sapphires">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">Sapphires</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Ruby">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">Rubi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Emeralds">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">Emerilds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Diamond Jewelry Section -->
+<section class="diamond-jewelry-section container my-5">
+    <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6">
+            <h2>Diamond Jewelry</h2>
+            <p class="text-muted">
+                Take a closer look at your favorite diamonds using our Real-Time Diamond Inspection service; 
+                a one-on-one consultation with a non-commissioned certified gemologist. Share your screen and 
+                get expert guidance as you explore diamonds in 360° HD with up to 40x magnification.
+            </p>
+            <button class="btn btn-outline-dark">Read more</button>
+        </div>
+
+        <!-- Image Placeholder -->
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/600x500" class="img-fluid rounded" alt="Diamond Jewelry">
+        </div>
+    </div>
+</section>
+
+        <!--Follow us on Instagram section-->
+        <section class="instagram-gallery container my-5">
+            <h2 class="text-center">Follow Us on Instagram</h2>
+            <div class="row justify-content-center align-items-center g-3">
+                <!-- Instagram image cards -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 3">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 4">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 5">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Instagram image 6">
+                    </div>
+                </div>
+                
+            </div>
+        </section>        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <h5>Jewelry</h5>
+                <p>Sign Up For Email<br>Send me BR Gems NYC LLC news, updates and offers.</p>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="email" placeholder="Email" aria-label="Email">
+                    <button class="btn btn-outline-light" type="submit">>>></button>
+                </form>
+            </div>
+
+            
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Contact Us Column -->
+                    <div class="col-md-4 text-center">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li>212.730.9777</li>
+                            <li><a href="#" class="text-white text-decoration-none">Store Locations</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Email Us</a></li>
+                        </ul>   
+                        <!-- Social Media Icons Centered Below Contact Us -->
+                        <div class="social-icons mt-3">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Diamonds</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Education</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Who We Are Column -->
+                    <div class="col-md-4">
+                        <h5>Who We Are</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Appointments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Horizontal Line to Separate Footer Bottom -->
+         <hr class="footer-divider">
+
+         <!-- Footer Bottom Info Aligned in One Row -->
+         <div class="row mt-3">
+             <div class="col-md-6">
+                 <small>&copy; 2023 BR Gems NYC LLC. All Rights Reserved.</small>
+             </div>
+             <div class="col-md-6 text-end">
+                 <small>Developed by Braintree Products Inc. | +1 347 206 0476</small>
+             </div>
+         </div>
+    </div>
+</footer>
+
+
+
+</html>
